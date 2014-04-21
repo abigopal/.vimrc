@@ -12,6 +12,8 @@ Bundle 'FuzzyFinder'
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
 Bundle 'vim-scripts/omlet.vim'
+Bundle 'digitaltoad/vim-jade'
+Bundle 'wavded/vim-stylus'
 
 filetype plugin indent on
 
@@ -19,6 +21,8 @@ filetype plugin indent on
 set nu 
 syntax on
 set tabstop=2
+set expandtab
+set shiftwidth=2
 
 " Fuzzyfinder
 map ff :FufFile<CR>
