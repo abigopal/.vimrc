@@ -14,6 +14,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'vim-scripts/omlet.vim'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'wavded/vim-stylus'
+Bundle 'hallison/vim-markdown'
 
 filetype plugin indent on
 
