@@ -52,3 +52,25 @@ augroup CursorLineOnlyInActiveWindow
 	autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
 	autocmd WinLeave * setlocal nocursorline
 augroup END
+
+"Really nice write mode!
+"(http://developerminutes.com/2014/02/16/write-mode-for-vim/)
+function! WriteMode()
+  wincmd n
+  wincmd L
+  7 wincmd <
+  hi NonText ctermbg=0 ctermfg=0
+  wincmd n
+  wincmd H
+  7 wincmd <
+  hi NonText ctermbg=0 ctermfg=0
+  windo set nonu
+  wincmd h
+  map j gj
+  map k gk
+  set laststatus=0
+  hi VertSplit ctermbg=0 ctermfg=0
+  echo "Write on."
+endfunction
+
+map \w :call WriteMode()
